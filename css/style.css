@@ -14,8 +14,10 @@
 }
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
+    font-size: 16px;
 }
 
 .main-container {
@@ -57,17 +59,47 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
 /****** header   ******/
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 79px;
+}
+
+.logo {
+    width: 61px;
+    height: 19px;
+    /* padding: 30px 0; */
 }
 
 nav ul {
     display: flex;
+    gap: 68px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    height: 79px;
+    border-top: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+/* nav a {
+    padding-bottom: 8px;
+} */
+
+nav a:hover {
+    color: var(--main-color);
+    border-top-color: var(--main-color);
 
 }
- 
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -132,7 +164,40 @@ nav ul {
     margin-bottom: 5px;
 }
 
+/* footer */
 
+.footer-container {
+    display: flex;
+    height: 163px;
+    background-color: var(--main-bg-color);
+    margin-top: 50px;
+    /* gap: 20px; */
+}
+
+.footer-column {
+    width:33.33%;
+    display: flex;
+    flex-direction: column; 
+}
+
+footer-column h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}   
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column h2 {
+    font-size: 16px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
