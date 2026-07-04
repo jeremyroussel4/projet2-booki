@@ -99,6 +99,20 @@ nav a:hover {
     border-top-color: var(--main-color);
 
 }
+/* search */
+.search {
+    background-color: var(--main-bg-color);
+}
+.search h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.search p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 
 
 /****** Hebergements And Populaires ***********/
@@ -118,6 +132,20 @@ nav a:hover {
 .hebergements {
     width: 65%;
 }
+.hebergements-cards {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /****** Populaires ***********/
 .populaires {
@@ -166,7 +194,7 @@ nav a:hover {
 
 /* activité */
 
-.activites-container {
+.activites {
     background-color: var(--main-bg-color);
     padding: 30px;
     /* box-sizing: border-box; */
@@ -201,17 +229,18 @@ nav a:hover {
     background-color: var(--main-bg-color);
     margin-top: 30px;
     padding-left: 20px;
-    /* gap: 20px; */
+    gap: 20px;
 }
 
 .footer-column {
     width: 33.33%;
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
     /* gap: 15px; */
 }
 
-footer-column h3 {
+.footer-column h3 {
     margin: 0 0 12px 0;
     font-size: 18px;
     font-weight: 700;
