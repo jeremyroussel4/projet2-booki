@@ -164,19 +164,14 @@ nav a:hover {
     border-radius: 20px 20px 0 0;
 }
 
-/* .hebergements-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
-
-
-
-
-
-
-
+.show-more {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
 
 
 /****** Populaires ***********/
@@ -230,7 +225,7 @@ nav a:hover {
 /* activité */
 
 .activites {
-    background-color: var(--main-bg-color);
+    background-color: white;
     padding: 30px;
     /* box-sizing: border-box; */
     margin-top: 30px;
@@ -240,19 +235,35 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+.activites-cards {
+    display: flex;
+    justify-content: space-between;
+}   
 
+.activites-cards .card {
+    height: 439px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+}
 
+.activites-cards>a {
+    width: 240px;
+    height: 439px;
+}   
 
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
-
-
-
-
-
-
-
-
-
+.activites .card-title {
+    margin-left: 15px;
+}
 
 
 
