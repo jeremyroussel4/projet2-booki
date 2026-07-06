@@ -129,7 +129,7 @@ nav a:hover {
 .search-form {
     display: flex;
     align-items: center;
-    /* gap: 10px; */
+    padding-top: 20px;
     margin: 20px 0;
 }
 .search-content {
@@ -206,7 +206,8 @@ nav a:hover {
 /* filters */
 .filters {
     display: flex;
-    align-items: center;    
+    align-items: center; 
+    padding: 20px 0;   
 }
 
 .filters-list {
