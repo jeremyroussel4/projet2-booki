@@ -538,5 +538,10 @@ nav a:hover {
     .hebergements-cards>a {
         width: 100%;
     }
-
+.filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 20px;
+}
 }
