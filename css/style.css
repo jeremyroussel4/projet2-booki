@@ -37,29 +37,6 @@ a {
     font-size: 22px;
 }
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    overflow: hidden;
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.card-subtitle {
-    font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-
-}
-
 .euro {
     font-weight: 700;
 }
@@ -68,7 +45,6 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** header   ******/
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -108,7 +84,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* search */
 .search {
     background-color: transparent;
 }
@@ -123,8 +98,6 @@ nav a:hover {
     font-size: 16px;
     font-weight: 400;
 }
-
-
 
 .search h2 {
     font-size: 18px;
@@ -183,11 +156,6 @@ nav a:hover {
     font-weight: 700;
 }
 
-
-
-
-
-
 .info {
     display: flex;
     align-items: center;
@@ -210,7 +178,6 @@ nav a:hover {
     color: var(--main-color);
 }
 
-/* filters */
 .filters {
     display: flex;
     align-items: center;
@@ -249,11 +216,12 @@ nav a:hover {
     cursor: pointer;
 }
 
-/****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
+
+.hebergements-and-populaires .section-title {}
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
@@ -263,67 +231,83 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .hebergements {
     width: 65%;
 }
 
-/* organise les 6 cartes */
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    justify-content: center;
+    column-gap: 30px;
     row-gap: 30px;
+    
+    margin-top: 30px;
 }
 
-.hebergements-cards>a {
-    width: 31%;
+.hebergement-link {
+    width: 230px;
+    flex-shrink: 0;
 }
 
-.hebergements .section-title {
-    margin-bottom: 30px;
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 207px;
+
+}
+
+.hebergements-cards img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
 }
 
 .hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex:1;
+    padding: 2px 10px 15px;
+    box-sizing: border-box;
+    gap: 8px;
+
 }
 
-.hebergements-cards .card-title {
-    margin: 5px 10px 0;
-    line-height: 19px;
-    min-height: 38px;
-}
-
-.hebergements-cards .card-subtitle {
-    margin: 2px 10px;
-}   
-
-.hebergements-cards .card-rating {
-    margin: 0px 10px 5px;
-}   
-
-/* organise l’intérieur de chaque carte */
-.hebergements-cards .card {
+.hebergements-cards .card-txt {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height:210px;
-    box-sizing: border-box;
-    margin-top: 0;
-}
-
-/* image */
-.hebergements-cards img {
-    width: 100%;
-    height: 124px;
-    border-radius: 20px 20px 0 0;
-        flex-shrink: 0;
+    gap: 8px;
 
 }
 
+.hebergements-cards .card-title,
+.hebergements-cards .card-subtitle,
+.hebergements-cards .card-rating {
+    margin: 0;
+}
 
 .show-more {
     display: block;
@@ -445,7 +429,7 @@ nav a:hover {
 
 .footer-container {
     display: flex;
-   
+
     background-color: var(--main-bg-color);
     margin-top: 30px;
     padding-left: 20px;
@@ -557,12 +541,13 @@ nav a:hover {
         height: auto;
     }
 
-    .header-container > a {
+    .header-container>a {
         display: flex;
         justify-content: center;
         width: 100%;
         padding: 30px 0;
     }
+
     .hebergements-cards {
         flex-direction: column;
     }
@@ -570,10 +555,11 @@ nav a:hover {
     .hebergements-cards>a {
         width: 100%;
     }
-.filters-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-left: 20px;
-}
+
+    .filters-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 20px;
+    }
 }
