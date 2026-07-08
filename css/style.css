@@ -84,7 +84,7 @@ nav a:hover {
 
 .search {
     background-color: transparent;
-    padding: 0 20px;
+    margin-top: 30px;
 }
 
 .search h1 {
@@ -106,8 +106,7 @@ nav a:hover {
 .search-form {
     display: flex;
     align-items: center;
-    padding-top: 20px;
-    margin: 20px 0;
+    margin: 40px 0 20px;
 }
 
 .search-content {
@@ -520,6 +519,12 @@ nav a:hover {
 
 @media (max-width: 767.98px) {
 
+    .logo {
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+    }
+
     .main-container {
         width: 100%;
         padding: 0;
@@ -558,13 +563,22 @@ nav a:hover {
         height: auto;
         padding-bottom: 15px;
         border-top-color: transparent;
-        border-bottom: 2px solid transparent;
+        border-bottom: 2px solid var(--main-bg-color);
     }
 
     nav a:hover {
         color: var(--main-color);
         border-top-color: transparent;
         border-bottom-color: var(--main-color);
+    }
+
+    .search {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .search h1 {
+        margin-top: 30px;
     }
 
     .search-text {
@@ -599,16 +613,18 @@ nav a:hover {
     .filters-list {
         width: 100%;
         flex-wrap: wrap;
-        gap: 10px;
         margin-left: 0;
     }
 
     .filter-button {
         width: calc(50% - 5px);
         padding: 0 10px;
+        margin-bottom: 10px;
         box-sizing: border-box;
     }
-
+.hebergements-and-populaires section{
+    border-radius: 0;
+}
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
@@ -617,13 +633,20 @@ nav a:hover {
         flex-direction: column;
     }
 
+    .populaires-cards .card {
+        margin-top: 20px;
+    }
+
     .populaires-cards a {
         width: 100%;
     }
 
     .hebergements-and-populaires .hebergements {
         background-color: white;
+        margin-top: 10px;
     }
+
+
 
     .hebergements-and-populaires .hebergements,
     .hebergements-and-populaires .populaires {
@@ -633,6 +656,7 @@ nav a:hover {
 
     .hebergements-cards {
         flex-direction: column;
+        margin-top: 20px;
     }
 
     .hebergements-cards .hebergement-link {
@@ -673,13 +697,13 @@ nav a:hover {
         padding-bottom: 40px;
     }
 
-.footer-column h3 {
-    margin: 0 0 20px 0;
-}
+    .footer-column h3 {
+        margin: 0 0 20px 0;
+    }
 
-.footer-column ul {
-    gap: 20px;
-}
+    .footer-column ul {
+        gap: 20px;
+    }
 
 
 
