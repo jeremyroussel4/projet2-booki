@@ -231,6 +231,7 @@ nav a:hover {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
+    box-sizing: border-box;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -534,7 +535,8 @@ nav a:hover {
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 30px 0;
+        padding: 20px 40px;
+        box-sizing: border-box;
     }
 
     nav {
@@ -567,7 +569,7 @@ nav a:hover {
 
     .search {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 40px;
         box-sizing: border-box;
     }
 
@@ -606,11 +608,11 @@ nav a:hover {
         background-color: white;
     }
 
-  .hebergements-and-populaires .hebergements,
-.hebergements-and-populaires .populaires {
-    padding-left: 40px;
-    padding-right: 40px;
-}
+    .hebergements-and-populaires .hebergements,
+    .hebergements-and-populaires .populaires {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
     .hebergements-cards {
         flex-direction: column;
