@@ -29,4 +29,5 @@ Projet réalisé dans le cadre de la formation **Développeur Web OpenClassrooms
 Clonez le dépôt :
 
 ```bash
-git clone ...
+git clone git@github.com:jeremyroussel4/projet2-booki.git
+cd projet2-booki
