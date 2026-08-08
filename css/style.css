@@ -203,11 +203,6 @@ nav a:hover {
     font-weight: 700;
 }
 
-.filter-button span {
-    font-size: 17px;
-    font-weight: bold;
-}
-
 .filter-button:hover {
     background-color: var(--filter-bg-color);
     cursor: pointer;
@@ -381,10 +376,6 @@ nav a:hover {
     background-color: transparent;
     padding: 30px;
     margin-top: 30px;
-}
-
-.activites .card-title {
-    margin: 0 15px;
 }
 
 .activites-title {
@@ -602,6 +593,7 @@ nav a:hover {
         padding: 0;
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        flex-shrink: 0;
     }
 
     .search-glass {
@@ -618,9 +610,6 @@ nav a:hover {
         flex: 1;
     }
 
-    .search-button {
-        flex-shrink: 0;
-    }
 
     .filters-list {
         width: 100%;
